@@ -1,0 +1,599 @@
+*{
+  box-sizing: border-box;
+}
+
+ html, body, header, div, span, applet, object, iframe,
+ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+ a, abbr, acronym, address, big, cite, code,
+ del, dfn, em, font, ins, kbd, q, s, samp,
+ small, strike, strong, sub, sup, tt, var,
+ dl, dt, dd, ol, ul, li,
+ fieldset, form, label, legend,
+ table, caption, tbody, tfoot, thead, tr, th, td {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   outline: 0;
+   font-weight: inherit;
+   font-style: inherit;
+   font-size: 100%;
+   font-family: inherit;
+   vertical-align: baseline;
+   text-decoration: none;
+   text-align: center;
+   font-family: Open Sans, Arial, sans-serif;
+   list-style-type: none;
+ }
+
+ body {
+   color: #695e4d;
+ }
+
+ a:visited, a, a:link, a:active {
+   color: #c7a058;
+ }
+
+ a:hover {
+   color: #587fc7;
+ }
+
+ #page-container {
+  position: relative;
+  min-height: 86vh;
+}
+
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: #587fc7;
+    border-color: #587fc7;
+}
+
+ /* Top Background Image */
+ .background-img {
+   background-repeat: no-repeat;
+   background-position: 0 -200px;
+   background-size: cover;
+   background-attachment: fixed;
+   position: absolute;
+   width: 100%;
+   height: 800px;
+   opacity: .3;
+   overflow: hidden;
+   background-image: url("../images/bluecake.jpg");
+ }
+
+ /* Header */
+ .container-fuild-header {
+   border-bottom: 2px solid;
+   border-color: #c9a35e;
+   position: relative;
+   display: block;
+   background-color: rgba(252, 251, 249, 0.95);
+   color: #c7a058;
+   z-index: 9999;
+   font-family: Open Sans, Arial, sans-serif;
+ }
+
+ /* Brand Logo */
+ .img-logo {
+   max-width: 110px;
+ }
+
+ /* Toggler Button Removing Border Outline & Humberger Image*/
+ .navbar-toggler:focus {
+   text-decoration: none;
+   outline: 0;
+   box-shadow: 0 0 0;
+ }
+
+.navbar-toggler{
+  margin-right: 3%;
+}
+
+ .navbar-toggler-icon {
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(199,160,88)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+ }
+
+ /* Custom Border */
+ .custom-border {
+   border: 1px solid;
+   border-color: #c9a35e;
+ }
+
+ /* Navgivation Bar */
+ .nav-item {
+   font-size: 19px;
+   margin: 8px;
+ }
+
+ .nav-link {
+   font-size: 20px;
+ }
+
+ .navigation-bar ul li ul {
+   position: absolute;
+   padding: 20px 0;
+   z-index: 9999;
+   width: 240px;
+   background: #fff;
+   display: none;
+   box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+   -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+   -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+   -webkit-transform: translateZ(0);
+ }
+
+ .dropdown-menu.show {
+   display: inline-block;
+   position: absolute;
+   margin-left: auto;
+   margin-right: auto;
+   left: 0;
+   right: 0;
+ }
+
+ .dropdown-menu li a{
+   font-size: 1.1rem;
+ }
+
+ .navigation-bar ul li ul li {
+   text-align-last: center;
+ }
+
+ .navigation-bar ul li ul li a:hover {
+   background-color: rgba(0, 0, 0, .03);
+   opacity: .7;
+ }
+
+ /* facebook whatsapp instagram logo */
+ .fab {
+   font-size: 35px;
+ }
+
+ /* Brand Name & Order Button */
+ .bnob-div {
+   position: relative;
+   display: block;
+   padding-top: 12.5em;
+   padding-bottom: 6em;
+ }
+
+ .text-align {
+   font-family: 'Open Sans', Helvetica, Arial, Lucida, sans-serif;
+   font-style: italic;
+   font-size: 40px;
+   text-align: center;
+   width: 100%;
+   font-weight: 300;
+ }
+
+ .text-align-l {
+   font-family: le-monde-livre-classic-byol, serif;
+   font-size: 1.3em;
+   color: #695e4d;
+   text-transform: uppercase;
+   letter-spacing: 6px;
+   font-style: normal;
+   font-weight: 300;
+ }
+
+ .text-align-t {
+   font-family: 'Open Sans', Helvetica, Arial, Lucida, sans-serif;
+   font-style: italic;
+   font-size: 1.8em;
+   text-align: center;
+   width: 100%;
+   font-weight: 300;
+ }
+
+ .button-order-now {
+   font-size: 1.25em;
+   color: #c7a058;
+   border-color: #c9a35e;
+   font-style: normal;
+   margin-top: 1.56em;
+   position: relative;
+   border: 2px solid;
+   padding: .3em .7em .3em .7em;
+   transition: font-size .2s;
+   background-color: #ffffff;
+ }
+
+ .button-order-now:hover {
+   color: #587fc7;
+   border-color: #587fc7;
+ }
+
+ /* Products Section */
+ .container-fuild {
+   position: relative;
+   background-color: #fff;
+ }
+
+ .view-more-div {
+   position: relative;
+   text-align: center;
+ }
+
+.homeProductImage{
+  height: 20rem;
+  width: 20rem;
+}
+
+ /* Order Now & Parallax Section */
+ #parallax {
+   position: relative;
+   padding: 3% 4%;
+ }
+
+ .sub-parallax {
+   position: relative;
+   overflow: hidden;
+ }
+
+ .onps-h2 {
+   font-style: normal;
+   font-weight: 300;
+   font-size: 3.5em;
+   color: #c3994c;
+   font-family: "lemonde";
+   padding: 10px 30px 30px;
+ }
+
+ .parallax-para {
+   line-height: 1.8;
+ }
+
+ .onps-button {
+   display: inline-block;
+ }
+
+ .parallax-img-1::after{
+   content: "";
+   position: absolute;
+   transform: scale(1.3);
+   background-image: url(../images/chococake.jpg);
+   background-size: cover;
+   z-index: -1;
+   right: 30px;
+   top: 70px;
+   height: 31.25em;
+   width: 100%;
+ }
+
+ .parallax-img-2::after {
+   content: "";
+   background-image: url(../images/gulaabjamun.jpg);
+   height: 31.25em;
+   width: 100%;
+   transform: scale(1.4);
+   position: absolute;
+   left: 33px;
+   top: 60px;
+   z-index: -1;
+   background-size: cover;
+ }
+
+ .sub-parallax-content {
+   background-color: #ffffff;
+ }
+
+ /* Testimonials */
+ #testimonials {
+   background-color: #c9a35e;
+   text-align: center;
+ }
+
+ .lte-subheader {
+   text-transform: uppercase;
+   font-size: 20px;
+   letter-spacing: 4px;
+   font-weight: 400;
+ }
+
+ .lte-header {
+   color: #FFFFFF;
+   font-size: 30px;
+   letter-spacing: 4px;
+   font-weight: 300;
+ }
+
+ .carousel-item {
+   padding: 7% 15%;
+ }
+
+ .testimonial-text {
+   font-size: 3rem;
+   line-height: 1.5;
+   font-weight: bold;
+ }
+
+ .testimonial-image {
+   width: 10%;
+   border-radius: 100%;
+   margin: 10px;
+ }
+
+ .carousel-indicators li {
+   width: 10px;
+   height: 10px;
+   margin: 10px;
+   border-radius: 100%;
+ }
+
+ /* Review Us */
+ .contact-us {
+   background-color: #c9a35e;
+ }
+
+ .contact-us h2 {
+   font-style: normal;
+   font-weight: 300;
+   font-size: 3.5em;
+   color: #ffffff;
+   font-family: "lemonde";
+   padding: 10px 30px 30px;
+ }
+
+ .form-signin {
+   width: 100%;
+   max-width: 330px;
+   padding: 15px;
+   margin: auto;
+ }
+
+ .form-signin .form-control {
+   position: relative;
+   height: auto;
+   padding: 10px;
+   font-size: 16px;
+ }
+
+ .top-input{
+   border-bottom-left-radius: 0;
+   border-bottom-right-radius: 0;
+   margin-bottom: -1px;
+ }
+
+ .middle-input{
+   margin-bottom: -1px;
+   border-radius: 0;
+ }
+
+ .bottom-input{
+   border-top-left-radius: 0;
+   border-top-right-radius: 0;
+ }
+
+ /* Photo Gallery */
+ .photo-gallery {
+   padding: 2%;
+ }
+
+ .photo-gallery h1 {
+   color: #c3994c;
+   font-family: le-monde-livre-classic-byol, serif;
+   font-style: italic;
+   font-size: 40px;
+   font-weight: 300;
+ }
+
+ .products {
+   display: flex;
+   flex-wrap: wrap;
+   list-style-type: none;
+   padding: 0 0 5%;
+   margin: 0;
+   justify-content: center;
+ }
+
+ .product {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   height: 100%;
+ }
+ .product img {
+   height: 20rem;
+   width: 20rem;
+   cursor: pointer;
+ }
+
+ .product-image-li{
+   margin: 1rem 1rem 0;
+ }
+
+ .product-share-li{
+   margin: 0 1rem 0.5rem;
+ }
+
+/* Zoom Image of Photo Gallery */
+ .zoomImage {
+   border-radius: 5px;
+   cursor: pointer;
+   transition: 0.3s;
+ }
+
+ .zoomImage:hover {opacity: 0.7;}
+
+ /* The Modal (background) */
+ .modal {
+   display: none; /* Hidden by default */
+   position: fixed; /* Stay in place */
+   z-index: 99999; /* Sit on top */
+   padding-top: 100px; /* Location of the box */
+   left: 0;
+   top: 0;
+   width: 100%; /* Full width */
+   height: 100%; /* Full height */
+   overflow: auto; /* Enable scroll if needed */
+   background-color: rgb(0,0,0); /* Fallback color */
+   background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+ }
+
+ /* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0.5)}
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0.5)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+
+/* menu */
+
+.menu-page{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  justify-content: center;
+}
+
+.menu-page div {
+  list-style-type: none;
+  padding: 0 3% 3%;
+  margin: 1%;
+  font-size: 1.1rem;
+}
+
+.menu-page h1{
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+/* about us */
+.aboutus{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: relative;
+  margin: 3%;
+  height: 40vh;
+  width: 26rem;
+  font-size: 1.2rem;
+}
+
+.aboutus div{
+  position: absolute;
+  padding: 2%;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.aboutus div h1{
+  font-size: 1.6rem;
+  padding-bottom: 4%;
+}
+
+/* footer */
+#footer {
+ position: relative;
+ bottom: 0;
+ width: 100%;
+ padding: .5%;
+}
+
+.footer-h1 ul{
+  display: flex;
+  justify-content: center;
+}
+
+.footer-h1 div h1{
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: .4%;
+}
+
+.footer-div{
+  margin: 5px;
+  padding: 5px;
+}
+
+
+ /* Mobile & Laptop View of Navgivation Bar */
+ .fiw-contact-mobile {
+   display: none;
+   border-bottom: 0px solid;
+   justify-content: center;
+   margin-bottom: 0;
+   padding-bottom: 0;
+ }
+.fiw-contact-mobile li{
+  margin: 0 10px;
+}
+
+
+ @media only screen and (max-width: 990px) {
+   .fiw-contact-mobile {
+     display: flex;
+
+   }
+   .fiw-contact {
+     display: none;
+   }
+
+  /* parallax image */
+   .mobile-img-none {
+     display: none;
+   }
+   .aboutus{
+     margin: 5% auto;
+   }
+
+}
+
+ @media only screen and (min-width: 990px) {
+   .navigation-bar ul li:hover ul {
+     display: inline-block;
+     position: absolute;
+     margin-left: auto;
+     margin-right: auto;
+     left: 0;
+     right: 0;
+   }
+
+   /* menu */
+.menu-page h1, .menu-page div{
+   text-align-last: left;
+}
+ }

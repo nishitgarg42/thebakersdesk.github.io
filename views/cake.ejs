@@ -1,0 +1,72 @@
+<%- include('partials/header'); -%>
+<%- include('partials/navigation'); -%>
+
+<div class="photo-gallery">
+  <h1>Photo Gallery</h1>
+</div>
+
+<div class="">
+  <ul class="products">
+    <%  dataSrc.forEach(function(data){ %>
+
+    <div class="product">
+      <li class="product-image-li"><img class="zoomImage" src="/images/cakes/<%= data.image %>" alt="TBD Cake Photo"></li>
+      <li class="product-share-li"><a href="https://wa.me/917008716283">Order Now</a></li>
+    </div>
+    <% }) %>
+  </ul>
+</div>
+
+<!-- The Modal Or Zoom Image Div -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" src="" id="img01">
+</div>
+
+
+<div class="">
+  <% if (totalPages > 0) { %>
+    <nav aria-label="Page navigation example">
+   <ul class="pagination justify-content-center">
+    <% if (currentPage == 1) { %>
+    <li class="page-item disabled"><a class="page-link">Previous</a></li>
+    <% } else { %>
+    <li class="page-item"><a class="page-link" href="cake?page=<%= parseInt(currentPage) - 1 %>">Previous</a></li>
+    <% } %>
+    <% let i = (Number(currentPage) > 2 ? Number(currentPage) - 2 : 1) %>
+    <% if (i !== 1) { %>
+    <li class="page-item disabled"><a class="page-link">...</a></li>
+    <% } %>
+    <% for (; i <= (Number(currentPage) + 2) && i <= totalPages; i++) { %>
+    <% if (i == currentPage) { %>
+    <li class="page-item active"><a class="page-link"><%= i %></a></li>
+    <% } else { %>
+    <li class="page-item"><a class="page-link" href="cake?page=<%= i %>"><%= i %></a></li>
+    <% } %>
+    <% if (i == Number(currentPage) + 2 && i < totalPages) { %>
+    <li class="page-item disabled"><a class="page-link">...</a></li>
+    <% } %>
+    <% } %>
+    <% if (currentPage == totalPages) { %>
+    <li class="page-item disabled"><a class="page-link">Next</a></li>
+    <% } else { %>
+    <li class="page-item"><a class="page-link" href="cake?page=<%= parseInt(currentPage) + 1 %>">Next</a></li>
+    <% } %>
+  </ul>
+  </nav>
+  <% } %>
+
+  <div class="m-2 p-1">
+    <form class="d-flex justify-content-center" action="/cake" method="POST">
+     <input class="page-link" type="text" name="goPage" placeholder="Go To Page" autocomplete="off">
+     <button class="page-link ms-1" type="submit" name="button">></button>
+    </form>
+  </div>
+</div>
+
+
+
+
+
+<script type="text/javascript" src="../js/index.js"></script>
+<%- include('partials/footer'); -%>

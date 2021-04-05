@@ -36,7 +36,7 @@ app.use(passport.session());
 
 
 // Mongodb
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost:27017/cakeDB", {useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://admin:Nishit1234@cluster0.mstzw.mongodb.net/cakeDB", {useNewUrlParser: true, useUnifiedTopology: true });
 mongoose.set("useCreateIndex", true);
 
 const productsSchema = {

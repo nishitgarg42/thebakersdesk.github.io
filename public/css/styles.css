@@ -52,15 +52,15 @@
  /* Top Background Image */
  .background-img {
    background-repeat: no-repeat;
-   background-position: 0 -200px;
+   background-position: 0 0;
    background-size: cover;
    background-attachment: fixed;
    position: absolute;
    width: 100%;
-   height: 800px;
+   height: 850px;
    opacity: .3;
    overflow: hidden;
-   background-image: url("../images/bluecake.jpg");
+   background-image: url("../images/bluecakes.png");
  }
 
  /* Header */
